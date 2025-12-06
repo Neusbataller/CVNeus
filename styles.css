@@ -8,7 +8,6 @@
     --accent-secondary: #FF7AC6;
 }
 
-/* RESET BÁSICO */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,8 +24,6 @@ body {
     color: var(--text-main);
     line-height: 1.6;
 }
-
-/* CONTENEDORES GENERALES */
 .section,
 .main-header,
 .main-footer {
@@ -39,7 +36,6 @@ body {
     padding: 4rem 1.5rem;
 }
 
-/* TITULOS */
 h1, h2, h3 {
     font-weight: 600;
 }
@@ -59,7 +55,6 @@ h2::after {
     margin-top: 0.4rem;
 }
 
-/* ENLACES */
 a {
     color: var(--accent-main);
     text-decoration: none;
@@ -69,7 +64,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* CABECERA Y MENÚ */
 .main-header {
     position: sticky;
     top: 0;
@@ -126,7 +120,6 @@ a:hover {
     color: #14091F;
 }
 
-/* HERO */
 .hero {
     padding-top: 5rem;
 }
@@ -167,7 +160,6 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* BOTONES */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -201,7 +193,6 @@ a:hover {
     color: #14091F;
 }
 
-/* FOTO HERO */
 .hero-photo {
     display: flex;
     justify-content: center;
@@ -225,7 +216,6 @@ a:hover {
     object-fit: cover;
 }
 
-/* SOBRE MÍ */
 .two-columns {
     display: grid;
     grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
@@ -261,7 +251,6 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* HABILIDADES */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -304,7 +293,6 @@ a:hover {
     margin-top: 0.25rem;
 }
 
-/* EXPERIENCIA – TIMELINE */
 .timeline {
     border-left: 2px solid var(--border-color);
     margin-left: 0.6rem;
@@ -347,7 +335,6 @@ a:hover {
     margin-bottom: 0.3rem;
 }
 
-/* FORMACIÓN Y PROYECTOS */
 .cards-column {
     display: grid;
     gap: 1.2rem;
@@ -364,7 +351,6 @@ a:hover {
     gap: 1.5rem;
 }
 
-/* CONTACTO */
 .contact-section {
     padding-bottom: 5rem;
 }
@@ -398,7 +384,6 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* FOOTER */
 .main-footer {
     border-top: 1px solid var(--border-color);
     padding: 1rem 1.5rem 1.5rem;
@@ -408,7 +393,6 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-    /* SOLO cambiamos sobre mí y contacto, el hero lo dejamos en 2 columnas */
     .two-columns,
     .contact-grid {
         grid-template-columns: 1fr;
@@ -417,9 +401,6 @@ a:hover {
     .hero {
         padding-top: 4.2rem;
     }
-
-    /* Quitamos el cambio de orden de la foto */
-    /* .hero-photo { ... }  <-- ELIMINAR ESTA PARTE */
 
     .main-header {
         flex-direction: column;
@@ -448,3 +429,4 @@ a:hover {
         padding-left: 1.2rem;
     }
 }
+
